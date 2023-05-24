@@ -1,0 +1,137 @@
+/*
+ Gemaakt voor full-screen 1920x1080!!
+ Firefox: F11 om naar fullscreen te gaan of gebruik de speciale add-on
+*/
+
+:root {
+ --HSTATS: 80px; /* Dit betekent dat de games 80px korter moeten! */
+ --BGGRIJS: #E5E5E5;
+ --zwart:#222;
+ --grijs:#666;
+ --rand:#aaa;
+ --rood: #A40000; /* #CC0E17*/
+ --blauw:#0069eb;
+ --groen: #4E9A06;
+}
+
+@font-face {
+ font-family: 'Games';
+ src: url('ContinuumBold.woff2') format('woff2'),
+    url('ContinuumBold.woff') format('woff'),
+    url('ContinuumBold.ttf') format('truetype');
+ font-weight: bold;
+ font-style: normal;
+ font-display: swap;
+}
+
+
+body,html,div {
+ font-family: 'Noto Sans', sans-serif;
+ font-size:1em;
+ color:var(--zwart);
+}
+
+body,html {
+ padding:0;
+ margin:0;
+}
+
+body {
+ overflow:hidden;
+ background-image:url('../Pix/bg.png');
+}
+
+#m {
+ width:1380px;
+ margin:0 auto;
+ height:calc(100vh - 310px);
+ overflow:scroll;
+ padding-top:48px;
+ padding-left:2px;
+}
+
+.titel {
+ font-family:"Games";
+ font-size:4em;
+ position:absolute;
+ text-align:center;
+ width: 100%;
+ color:#666;
+ top:16px;
+}
+
+.StatsBar {
+ height:310px;
+ dborder-top:solid 2px cyan;
+ background-repeat:no-repeat;
+ background-image:url('../Pix/lijn6.png');
+ position:relative;
+}
+.StatsBar .logo {
+ max-width:130px;
+ position:absolute;
+ top:100px;
+ left:50px;
+}
+
+/* Televisie */
+.tv0 {
+ float:left;
+ margin-right:32px;
+}
+
+.tv0:nth-child(4n) {
+ margin-right:0!important;
+ clear:right;
+}
+
+.tv {
+ position: relative;
+ width: 300px;
+ height: 200px;
+ margin: 20px 10px;
+ background: grey;
+
+ border-radius: 50% / 5%;
+ color: white;
+ text-align: center;
+ text-indent: .1em;
+}
+
+.tv:before {
+ content: "";
+ position: absolute;
+ top: 5%;
+ bottom: 5%;
+ right: -4%;
+ left: -4%;
+ background: inherit;
+ border-radius: 4% / 50%;
+}
+
+.tv2 {
+ position: relative;
+ left:-4px;
+ top:6px;
+ width: 288px;
+ height: 188px;
+ margin: 20px 10px;
+ background-image:url("../Pix/nois.png");
+ background-position:center center;
+
+ border-radius: 50% / 5%;
+ color: white;
+ text-align: center;
+ text-indent: .1em;
+}
+
+.tv2:before {
+ content: "";
+ position: absolute;
+ top: 5%;
+ bottom: 5%;
+ right: -4%;
+ left: -4%;
+ background: inherit;
+ border-radius: 4% / 50%;
+}

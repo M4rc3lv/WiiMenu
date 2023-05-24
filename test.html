@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<?php
+ session_start();
+
+ //require "funcs.php";
+?>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Play Exergames with two Big Buttons. Maintain your health and play play play...">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Client/w3.css" >
+  <link rel="stylesheet" href="Client/twobuttons.css" >
+  <script src="Client/jquery-3.6.4.min.js"></script>
+  <script src="Client/jcanvas.min.js"></script>
+  <script src="Client/twobuttons.js"></script>
+  <title>The Two Buttons</title>
+ </head>
+ <body>
+  <div id="m">
+  <style>
+   body {
+     background-image:url("Pix/ruis.png");
+   }
+  .tv {
+  width: 360px;
+  height: 200px;
+  margin:16px;
+  border-radius: 20% / 80%;
+  border:solid 6px darkgray;
+  bdackground-color: grey;
+  background-image:url("Pix/bg.png");
+  float:left;
+}
+
+#tvshape {
+ position: relative;
+ width: 300px;
+ height: 200px;
+ margin: 20px 10px;
+ background: grey;
+
+ border-radius: 50% / 5%;
+ color: white;
+ text-align: center;
+ text-indent: .1em;
+}
+
+#tvshape:before {
+ content: "";
+ position: absolute;
+ top: 5%;
+ bottom: 5%;
+ right: -4%;
+ left: -4%;
+ background: inherit;
+ border-radius: 4% / 50%;
+}
+
+#tvshape2 {
+ position: relative;
+ left:-4px;
+ top:6px;
+ width: 288px;
+ height: 188px;
+ margin: 20px 10px;
+ dbackground: #0809fe;
+ background-image:url("Pix/nodis.png");
+ background-align:center center;
+
+
+ border-radius: 50% / 5%;
+ color: white;
+ text-align: center;
+ text-indent: .1em;
+}
+
+#tvshape2:before {
+ content: "";
+ position: absolute;
+ top: 5%;
+ bottom: 5%;
+ right: -4%;
+ left: -4%;
+ background: inherit;
+ border-radius: 4% / 50%;
+}
+
+
+</style>
+  </div><!-- m -->
+
+  <div class="StatsBar">
+   Hoi
+  </div>
+ </body>
+</html>
